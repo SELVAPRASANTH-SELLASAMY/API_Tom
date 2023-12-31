@@ -21,6 +21,9 @@ App.get("/",(req,res)=>{
 App.get("/tomImage",(req,res)=>{
     res.sendFile(path.join(__dirname,'/views/1j5bkn.jpg'))
 })
+App.get("/tomImage1",(req,res)=>{
+    res.sendFile(path.join(__dirname,'/views/tim.png'))
+})
 
 //db connection
 mongoose.connect("mongodb://localhost:27017/Tom").
